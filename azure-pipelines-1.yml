@@ -14,12 +14,11 @@ steps:
 # Acquire a specific version of Java from a user-supplied Azure blob or the tool cache and sets JAVA_HOME.
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '11'
+    versionSpec: '8'
     jdkArchitectureOption: 'x64'
-    jdkSourceOption: LocalDirectory
-    jdkFile: "JDKBin_zip"
-    jdkDestinationDirectory: "$(agent.tempDirectory)/bin"
-    cleanDestinationDirectory: true
+    jdkSourceOption: 'LocalDirectory'
+    jdkFile: 'C:\jdk-8u202-windows-i586.exe'
+    cleanDestinationDirectory: false
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
