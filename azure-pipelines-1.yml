@@ -17,7 +17,7 @@ steps:
     versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: LocalDirectory
-    jdkFile: "JAVA_HOME_11_X64_JDKBin_zip"
+    jdkFile: "JDKBin_zip"
     jdkDestinationDirectory: "$(agent.tempDirectory)/bin"
     cleanDestinationDirectory: true
 - task: Maven@3
