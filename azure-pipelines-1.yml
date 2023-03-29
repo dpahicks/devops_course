@@ -16,7 +16,7 @@ steps:
   inputs:
    versionSpec: '8'
    jdkArchitectureOption: 'x64'
-   jdkSourceOption: 'LocalDirectory' 
+   jdkSourceOption: 'PreInstalled' 
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
